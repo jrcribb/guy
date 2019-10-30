@@ -239,6 +239,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="simplest/" title="Example" class="md-nav__link">
+      Example
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -274,7 +286,7 @@ It borrows the idea from <a href="https://nitratine.net/blog/post/python-gui-usi
 <p>If you want to release a standalone app, with all included (your script + a chrome container). You can include special mode with <a href="https://github.com/cztomczak/cefpython">cefpython3</a>. But the footprint will be around 60mo (like an electron app). But you can ;-)</p>
 <p>There are 3 ways to release your app :</p>
 <ul>
-<li><strong>app</strong>: your user will need to have a chrome instance. The GUI will be handled by the chrome instance, runned in "app mode".</li>
+<li><strong>app</strong>: your user will need to have a chrome instance. The GUI will be handled by the chrome instance, runned in "app mode". (on android/ios, the GUI will be handled by webViewClient/kivy)</li>
 <li><strong>cef</strong>: (stands for cefpython3): All is embedded, it's the embedded cef instance which will handle your GUI.</li>
 <li><strong>server</strong>: it will act as an http server, and any browsers can handle your GUI. So, there can be multiple clients !</li>
 </ul>
@@ -284,31 +296,6 @@ The <strong>app mode</strong> can be runned on an Android device, using kivy/bui
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Perhaps on iOS devices too, using kivy/builozer, but not tested it !</p>
-</div>
-<p>The simplest guy app could look like this :</p>
-<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
-<span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">Guy</span>
-
-<span class="k">class</span> <span class="nc">Simple</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
-    <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
-    <span class="vm">__doc__</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;&lt;button onclick=&quot;test()&quot;&gt;test&lt;/button&gt;&quot;&quot;&quot;</span>
-
-    <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">gui</span><span class="o">=</span><span class="n">Simple</span><span class="p">()</span>
-    <span class="n">gui</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-</pre></div>
-
-
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If you want to act as a cef instance, replace <code>gui.run()</code> by <code>gui.runCef()</code></p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If you want to act as a http server, replace <code>gui.run()</code> by <code>gui.serve()</code></p>
 </div>
                 
                   
@@ -326,6 +313,27 @@ The <strong>app mode</strong> can be runned on an Android device, using kivy/bui
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="simplest/" title="Example" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Example
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
