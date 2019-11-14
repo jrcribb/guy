@@ -38,7 +38,7 @@
     
     
       
-        <title>Run guy's app - Guy</title>
+        <title>Demo - Guy</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#run-your-app" tabindex="1" class="md-skip">
+      <a href="#demo" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Run guy's app
+                Demo
               
             </span>
           
@@ -294,6 +294,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../run/" title="Run guy's app" class="md-nav__link">
+      Run guy's app
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -304,65 +316,10 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Run guy's app
-      </label>
-    
-    <a href="./" title="Run guy's app" class="md-nav__link md-nav__link--active">
-      Run guy's app
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#app-mode" class="md-nav__link">
-    app mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cef-mode" class="md-nav__link">
-    cef mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-mode" class="md-nav__link">
-    server mode
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../demo/" title="Demo" class="md-nav__link">
+    <a href="./" title="Demo" class="md-nav__link md-nav__link--active">
       Demo
     </a>
+    
   </li>
 
     
@@ -443,36 +400,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#app-mode" class="md-nav__link">
-    app mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cef-mode" class="md-nav__link">
-    cef mode
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-mode" class="md-nav__link">
-    server mode
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -484,33 +411,13 @@
               
                 
                 
-                <h1 id="run-your-app">Run your app</h1>
-<p>Admit you've got an app:</p>
-<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">Guy</span>
-
-<span class="k">class</span> <span class="nc">YourApp</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
-    <span class="o">...</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">app</span><span class="o">=</span><span class="n">YourApp</span><span class="p">()</span>
-    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>           <span class="c1">#&lt;- this is how to run it ;-)</span>
-</pre></div>
-
-
-<h2 id="app-mode">app mode</h2>
-<p>Use <code>app.run()</code></p>
-<p>Classical mode, on desktop : it uses the installed chrome browser in app mode. (it's the way to run on android too)</p>
-<h2 id="cef-mode">cef mode</h2>
-<p>Use <code>app.runCef()</code></p>
-<p>Special mode for desktop : when you want to provide a standalone app, with all included. You will need cefpython3 !</p>
-<h2 id="server-mode">server mode</h2>
-<p>Use <code>app.serve()</code></p>
-<p>Server mode, for servers.</p>
-<p>Optionnal parameters:</p>
+                <h1 id="demo">Demo</h1>
+<p>Only server's modes are available as demo :</p>
 <ul>
-<li>port: (number) listening port, default: 8000.</li>
-<li>open: (bool) open default browser to the client, default: True</li>
+<li>Here is a <a href="https://starter-guy.glitch.me/#/">demo</a> (<a href="https://glitch.com/edit/#!/starter-guy">sources</a>), of a simple guy's app (server mode).</li>
+<li>Here is a <a href="https://starter-guy-vuejs.glitch.me/#/">demo</a> (<a href="https://glitch.com/edit/#!/starter-guy-vuejs">sources</a>), of a guy's app serving a vuejs/sfc UI.</li>
 </ul>
+<p>If you want to try app/cef mode, just look the <a href="https://github.com/manatlan/guy">test*.py files here</a></p>
                 
                   
                 
@@ -531,7 +438,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../multiple/" title="Multiple Instance" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../run/" title="Run guy's app" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -540,19 +447,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Multiple Instance
+                Run guy's app
               </span>
             </div>
           </a>
         
         
-          <a href="../demo/" title="Demo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../howto_migrate_from_wuy_to_guy/" title="From wuy to guy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Demo
+                From wuy to guy
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
