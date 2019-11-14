@@ -336,8 +336,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../howto_migrate_from_wuy_to_guy/" title="wuy to guy" class="md-nav__link">
-      wuy to guy
+    <a href="../howto_migrate_from_wuy_to_guy/" title="From wuy to guy" class="md-nav__link">
+      From wuy to guy
     </a>
   </li>
 
@@ -348,8 +348,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../howto_build_exe_windows/" title="freeze exe/windows" class="md-nav__link">
-      freeze exe/windows
+    <a href="../howto_build_exe_windows/" title="Freeze exe/windows" class="md-nav__link">
+      Freeze exe/windows
     </a>
   </li>
 
@@ -404,26 +404,22 @@
 <span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">Guy</span>
 
 <span class="k">class</span> <span class="nc">Simple</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
-    <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
-    <span class="vm">__doc__</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;&lt;button onclick=&quot;self.test()&quot;&gt;test&lt;/button&gt;&quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;&lt;button onclick=&quot;self.test()&quot;&gt;test&lt;/button&gt;&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">gui</span><span class="o">=</span><span class="n">Simple</span><span class="p">()</span>
-    <span class="n">gui</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+    <span class="n">app</span><span class="o">=</span><span class="n">Simple</span><span class="p">()</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
 
 <p>Will run an <strong>app mode</strong>. And can be runned on any OS (android, windows, *nix, mac/iOS, ...)</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you want to act as a cef instance, replace <code>gui.run()</code> by <code>gui.runCef()</code></p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>If you want to act as a http server, replace <code>gui.run()</code> by <code>gui.serve()</code></p>
+<p>If you want to act as a cef instance, replace <code>app.run()</code> by <code>app.runCef()</code></p>
+<p>If you want to act as a http server, replace <code>app.run()</code> by <code>app.serve()</code></p>
 </div>
                 
                   
