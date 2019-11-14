@@ -38,7 +38,7 @@
     
     
       
-        <title>Example - Guy</title>
+        <title>Server side - Guy</title>
       
     
     
@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#the-simplest-guy-app-could-look-like-this" tabindex="1" class="md-skip">
+      <a href="#server-side-python-guy" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Example
+                Server side
               
             </span>
           
@@ -234,20 +234,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Example" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../simplest/" title="Example" class="md-nav__link">
       Example
     </a>
-    
   </li>
 
     
@@ -267,11 +258,118 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../server/" title="Server side" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Server side
+      </label>
+    
+    <a href="./" title="Server side" class="md-nav__link md-nav__link--active">
       Server side
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guy-class" class="md-nav__link">
+    Guy Class
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initself" class="md-nav__link">
+    init(self)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfemit-event-arg1-arg2" class="md-nav__link">
+    self.emit( event, arg1, arg2 ... )
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfemitme-event-arg1-arg2" class="md-nav__link">
+    self.emitMe( event, arg1, arg2 ... )
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfcfg" class="md-nav__link">
+    self.cfg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-with-docstring" class="md-nav__link">
+    Rendering with docstring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-with-an-html-file" class="md-nav__link">
+    Rendering with an html file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-override" class="md-nav__link">
+    Rendering override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-content" class="md-nav__link">
+    Static content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-http" class="md-nav__link">
+    Hook http
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -364,6 +462,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guy-class" class="md-nav__link">
+    Guy Class
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initself" class="md-nav__link">
+    init(self)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfemit-event-arg1-arg2" class="md-nav__link">
+    self.emit( event, arg1, arg2 ... )
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfemitme-event-arg1-arg2" class="md-nav__link">
+    self.emitMe( event, arg1, arg2 ... )
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selfcfg" class="md-nav__link">
+    self.cfg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-with-docstring" class="md-nav__link">
+    Rendering with docstring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-with-an-html-file" class="md-nav__link">
+    Rendering with an html file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendering-override" class="md-nav__link">
+    Rendering override
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static-content" class="md-nav__link">
+    Static content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-http" class="md-nav__link">
+    Hook http
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,7 +558,8 @@
               
                 
                 
-                <h1 id="the-simplest-guy-app-could-look-like-this">The simplest guy app could look like this</h1>
+                <h1 id="server-side-python-guy">Server Side : python guy</h1>
+<p>Basically, you subclass the guy class like this:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/python3 -u</span>
 <span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">Guy</span>
 
@@ -385,22 +569,76 @@
 
     <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">gui</span><span class="o">=</span><span class="n">Simple</span><span class="p">()</span>
-    <span class="n">gui</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </pre></div>
 
 
-<p>Will run an <strong>app mode</strong>. And can be runned on any OS (android, windows, *nix, mac/iOS, ...)</p>
+<p>And all declared methods will be available on <a href="../client/">client side</a>.</p>
+<p>Here there will be a <code>self.test()</code> method in client side.</p>
+<h2 id="guy-class">Guy Class</h2>
+<h3 id="initself"><code>init(self)</code></h3>
+<p>Override this method to do thing, when a client is connected.</p>
+<h3 id="selfemit-event-arg1-arg2"><code>self.emit( event, arg1, arg2 ... )</code></h3>
+<p>Call this method to emit an <code>event</code> to all connected clients.</p>
+<p>It's a non-sense in <code>app</code> or <code>cef</code> mode : because there is only one client. It only got sense in <code>server</code> mode.</p>
+<h3 id="selfemitme-event-arg1-arg2"><code>self.emitMe( event, arg1, arg2 ... )</code></h3>
+<p>Call this method to emit an <code>event</code> to the connected client.</p>
+<h3 id="selfcfg"><code>self.cfg</code></h3>
+<p>A place to get/set vars, which will be stored on server side, in a <code>config.json</code> file.</p>
+<h3 id="rendering-with-docstring">Rendering with docstring</h3>
+<p>It's the simplest thing : just declare your gui/html in the docstring of your class.</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Simple</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
+    <span class="vm">__doc__</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;&lt;button onclick=&quot;self.test()&quot;&gt;test&lt;/button&gt;&quot;&quot;&quot;</span>
+</pre></div>
+
+
+<p>It's a fast way to release a simple component. But it's not adapted for larger app ;-)</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you want to act as a cef instance, replace <code>gui.run()</code> by <code>gui.runCef()</code></p>
+<p>here is the <code>__doc__</code> declaration. Which is needed if you want to release a component like that on android (because buildozer seems to remove them, if not prefixed)</p>
 </div>
+<h3 id="rendering-with-an-html-file">Rendering with an html file</h3>
+<p>If you want to separate the UI from the code. You can put your html in a file named as the class name, in a <code>static</code> folder.</p>
+<p>It's the preferable way to go, for larger app.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you want to act as a http server, replace <code>gui.run()</code> by <code>gui.serve()</code></p>
+<p>In this case : you should provide a tag <code>&lt;script src="guy.js"&gt;&lt;/script&gt;</code> in your html.</p>
 </div>
+<h3 id="rendering-override">Rendering override</h3>
+<p>Sometimes, you need to make more things, and you can do it, by overriding the <code>_render(self, path)</code> method of your class.</p>
+<p>For bigger app : I use <a href="https://github.com/manatlan/vbuild">vbuild</a> to render vuejs/sfc components.
+(see <a href="https://glitch.com/~starter-guy-vuejs">starter-guy-vuejs</a>, and <a href="https://starter-guy-vuejs.glitch.me/#/">demo</a>)</p>
+<div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">App</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
+
+  <span class="k">def</span> <span class="nf">_render</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">path</span><span class="p">):</span> <span class="c1"># override default </span>
+      <span class="k">with</span> <span class="nb">open</span><span class="p">(</span> <span class="s2">&quot;app/APP.html&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fid</span><span class="p">:</span>
+          <span class="n">buf</span><span class="o">=</span><span class="n">fid</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+      <span class="n">r</span><span class="o">=</span><span class="n">vbuild</span><span class="o">.</span><span class="n">render</span><span class="p">(</span> <span class="s2">&quot;app/*.vue&quot;</span><span class="p">)</span>
+
+      <span class="n">buf</span><span class="o">=</span><span class="n">buf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;!-- TPLS --&gt;&quot;</span><span class="p">,</span><span class="n">r</span><span class="o">.</span><span class="n">html</span><span class="p">)</span>
+      <span class="n">buf</span><span class="o">=</span><span class="n">buf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/* CSS */&quot;</span><span class="p">,</span><span class="n">r</span><span class="o">.</span><span class="n">style</span><span class="p">)</span>
+      <span class="n">buf</span><span class="o">=</span><span class="n">buf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/* JS */&quot;</span><span class="p">,</span> <span class="n">r</span><span class="o">.</span><span class="n">script</span><span class="p">)</span>      
+
+      <span class="k">return</span> <span class="n">buf</span>
+</pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In this case : you should provide a tag <code>&lt;script src="guy.js"&gt;&lt;/script&gt;</code> in your response.</p>
+</div>
+<h2 id="static-content">Static content</h2>
+<p><strong>guy</strong> will serve everything that is contained in a <code>static</code> folder, as static content.</p>
+<h2 id="hook-http">Hook http</h2>
+<p><strong>Guy</strong> provides an <code>http</code> decorator to handle specific http requests. It can be useful for a lot of things.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">http</span>
+
+<span class="nd">@http</span><span class="p">(</span><span class="s2">&quot;/item/(\d+)&quot;</span><span class="p">)</span> 
+<span class="k">def</span> <span class="nf">getItem</span><span class="p">(</span><span class="n">web</span><span class="p">,</span><span class="n">number</span><span class="p">):</span>
+  <span class="n">web</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s2">&quot;item </span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">number</span> <span class="p">)</span>
+</pre></div>
+
+
+<p><code>web</code> is a <a href="https://www.tornadoweb.org/en/stable/web.html#tornado.web.RequestHandler">Tornado's TequestHandler</a></p>
                 
                   
                 
@@ -421,7 +659,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../anatomy/" title="Anatomy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -430,19 +668,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction
+                Anatomy
               </span>
             </div>
           </a>
         
         
-          <a href="../anatomy/" title="Anatomy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../client/" title="Client side" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Anatomy
+                Client side
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
