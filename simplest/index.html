@@ -280,12 +280,14 @@
                 
                 
                 <h1 id="the-simplest-guy-app-could-look-like-this">The simplest guy app could look like this</h1>
-<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+<div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/python3 -u</span>
 <span class="kn">from</span> <span class="nn">guy</span> <span class="kn">import</span> <span class="n">Guy</span>
 
 <span class="k">class</span> <span class="nc">Simple</span><span class="p">(</span><span class="n">Guy</span><span class="p">):</span>
     <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
-    <span class="vm">__doc__</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;&lt;button onclick=&quot;test()&quot;&gt;test&lt;/button&gt;&quot;&quot;&quot;</span>
+    <span class="vm">__doc__</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;button onclick=&quot;self.test()&quot;&gt;test&lt;/button&gt;</span>
+<span class="s2">    &quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">)</span>
