@@ -336,15 +336,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#selfemit-event-arg1-arg2" class="md-nav__link">
-    self.emit( event, arg1, arg2 ... )
+  <a href="#async-selfemit-event-arg1-arg2" class="md-nav__link">
+    async self.emit( event, arg1, arg2 ... )
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selfemitme-event-arg1-arg2" class="md-nav__link">
-    self.emitMe( event, arg1, arg2 ... )
+  <a href="#async-selfemitme-event-arg1-arg2" class="md-nav__link">
+    async self.emitMe( event, arg1, arg2 ... )
   </a>
   
 </li>
@@ -571,15 +571,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#selfemit-event-arg1-arg2" class="md-nav__link">
-    self.emit( event, arg1, arg2 ... )
+  <a href="#async-selfemit-event-arg1-arg2" class="md-nav__link">
+    async self.emit( event, arg1, arg2 ... )
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#selfemitme-event-arg1-arg2" class="md-nav__link">
-    self.emitMe( event, arg1, arg2 ... )
+  <a href="#async-selfemitme-event-arg1-arg2" class="md-nav__link">
+    async self.emitMe( event, arg1, arg2 ... )
   </a>
   
 </li>
@@ -696,10 +696,10 @@
 <h2 id="guy-class">Guy Class</h2>
 <h3 id="initself"><code>init(self)</code></h3>
 <p>Override this method to do thing, when a client is connected.</p>
-<h3 id="selfemit-event-arg1-arg2"><code>self.emit( event, arg1, arg2 ... )</code></h3>
+<h3 id="async-selfemit-event-arg1-arg2"><code>async self.emit( event, arg1, arg2 ... )</code></h3>
 <p>Call this method to emit an <code>event</code> to all connected clients.</p>
 <p>It's a non-sense in <code>app</code> or <code>cef</code> mode : because there is only one client. It only got sense in <code>server</code> mode.</p>
-<h3 id="selfemitme-event-arg1-arg2"><code>self.emitMe( event, arg1, arg2 ... )</code></h3>
+<h3 id="async-selfemitme-event-arg1-arg2"><code>async self.emitMe( event, arg1, arg2 ... )</code></h3>
 <p>Call this method to emit an <code>event</code> to the connected client.</p>
 <h3 id="selfcfg"><code>self.cfg</code></h3>
 <p>A place to get/set vars, which will be stored on server side, in a <code>config.json</code> file.</p>
