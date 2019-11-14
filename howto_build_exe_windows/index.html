@@ -473,13 +473,13 @@
                 
                 
                 <h1 id="how-to-build-an-exe-for-windows">How to build an exe for Windows</h1>
-<p>It can be very useful to distribute and exe on Microsoft Windows platforms (btw, you can freeze an executable on all platforms)</p>
+<p>It can be very useful to distribute and exe on Microsoft Windows platforms. By the way, you can freeze an executable on all platforms. But the following lines are for Windows platform.</p>
 <p>You will need <a href="https://www.pyinstaller.org/">pyinstaller</a> !</p>
 <h2 id="a-light-one-with-the-need-of-chrome-on-the-host">A "light" one, with the need of chrome on the host</h2>
-<p>Who doesn't have chrome on its computer ?!</p>
-<p>If there is a chrome on the host. It's the best option : the exe will reuse the installed chrome in "app mode". The exe will be lighter (6mo min)</p>
+<p>(Who doesn't have chrome on its computer ?!)</p>
+<p>If yours users have chrome installed. It's the best option : the exe will reuse the installed chrome in "app mode". The exe will be lighter (6mo min)</p>
 <p>It's the best option for <code>app.run()</code> or <code>app.serve()</code> modes in your main py file.</p>
-<div class="codehilite"><pre><span></span>pyinstaller.exe YourGuyApp.py --noupx --onefile --noconsole --exclude-module cefpython3 --add-data=&quot;static;static&quot;
+<div class="codehilite"><pre><span></span>&gt; pyinstaller.exe YourGuyApp.py --noupx --onefile --noconsole --exclude-module cefpython3 --add-data=&quot;static;static&quot;
 </pre></div>
 
 
@@ -496,7 +496,7 @@
 <p>Install cefpython
 <code>python3 -m pip install cefpython3</code></p>
 <p>And change your <code>app.run()</code> into <code>app.runCef()</code> in your main py file.</p>
-<div class="codehilite"><pre><span></span>pyinstaller.exe YourGuyApp.py --noupx --onefile --noconsole  --add-data=&quot;static;static&quot;
+<div class="codehilite"><pre><span></span>&gt; pyinstaller.exe YourGuyApp.py --noupx --onefile --noconsole  --add-data=&quot;static;static&quot;
 </pre></div>
 
 

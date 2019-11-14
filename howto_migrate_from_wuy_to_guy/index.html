@@ -414,18 +414,18 @@
                 
                 
                 <h1 id="how-to-migrate-from-wuy">How to migrate from wuy</h1>
-<p><strong>wuy</strong> is the ancestor of <strong>guy</strong>.</p>
+<p>(<strong>wuy</strong> is the ancestor of <strong>guy</strong>)</p>
 <ul>
-<li>Replace all <code>wuy</code> keyword in your py and html/js files, by <code>guy</code></li>
+<li>Replace all <code>wuy</code> keyword in your py files, by <code>guy</code></li>
+<li>Replace all <code>wuy</code> in html/js files, by <code>guy</code> (for core methods) or <code>self</code> (for those which you have declared in your class) ... see (<a href="../client/">client side</a>)</li>
 <li>Replace <code>wuy.Window</code>/<code>wuy.Server</code> by <code>guy.Guy</code></li>
 <li><code>.get() &amp; .set()</code> configs are replaced by <code>self.cfg</code> (py side) and <code>guy.cfg</code> (js side)</li>
+<li>Rename your <code>web</code> folder to <code>static</code> folder, if needed.</li>
 <li>At launch, get the instance, and apply one of theses methods:<ul>
 <li>instance.run() : for classical "app mode"</li>
-<li>instance.runCef() : for app mode in cefpython3</li>
 <li>instance.serve() : for classical "server mode"</li>
 </ul>
 </li>
-<li>Rename your <code>web</code> folder to <code>static</code> folder, if needed.</li>
 </ul>
 <p>From wuy:</p>
 <div class="codehilite"><pre><span></span><span class="n">AppWindow</span><span class="p">()</span>

@@ -663,6 +663,7 @@
 <p class="admonition-title">Info</p>
 <p>here is the <code>__doc__</code> declaration. Which is needed if you want to release a component like that on android (because buildozer seems to remove them, if not prefixed)</p>
 </div>
+<p><strong>TODO</strong> : talk about template engine ! (<code>&lt;&lt;var&gt;&gt;</code> replaced by instance/class attributs)</p>
 <h3 id="rendering-with-an-html-file">Rendering with an html file</h3>
 <p>If you want to separate the UI from the code. You can put your html in a file named as the class name, in a <code>static</code> folder.</p>
 <p>It's the preferable way to go, for larger app.</p>
@@ -670,6 +671,7 @@
 <p class="admonition-title">Info</p>
 <p>In this case : you should provide a tag <code>&lt;script src="guy.js"&gt;&lt;/script&gt;</code> in your html.</p>
 </div>
+<p><strong>TODO</strong> : talk about template engine ! (<code>&lt;&lt;var&gt;&gt;</code> replaced by instance/class attributs)</p>
 <h3 id="rendering-override">Rendering override</h3>
 <p>Sometimes, you need to make more things, and you can do it, by overriding the <code>_render(self, path)</code> method of your class.</p>
 <p>For bigger app : I use <a href="https://github.com/manatlan/vbuild">vbuild</a> to render vuejs/sfc components.
